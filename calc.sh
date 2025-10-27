@@ -1,23 +1,13 @@
 #!/bin/bash
 
-read -t 5 -p "You Have 5 seconds to enter your name: " name
-if [ -z "$name" ]; then
-    echo "You didnt enter your damn name"
-else
-    echo "Good job, $name!"
-fi
+name=""
 
-read -t 5 -p "try again? (y/n) " ans
-if [ "$ans" == "y" ]; then 
+while [ -z "$name" ]; do 
     read -t 5 -p "You Have 5 seconds to enter your name: " name
-fi
 
-if [ -z "$name" ]; then
-    echo "You didnt enter your damn name"
-else
-    echo "Good job, $name!"
-fi
+    if [ -z "$name" ]; then
+        echo "You didnt enter your damn name"
+    fi
+done
 
-if [ "$ans" == "n" ]; then 
-    echo "Bye loser"
-fi
+echo "Good job, $name!"
