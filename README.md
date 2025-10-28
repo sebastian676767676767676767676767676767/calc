@@ -14,7 +14,7 @@ If you put Your name, It will say "good Job, (the name you put) and end the scri
 
 ## If you dont put a name 
 
-If you dont put a name, it will say "You didnt enter your damn name" and repormpt you
+If you dont put a name, it will say "You didnt enter your damn name" and reprompt you
 
 ## If you put your name to "Clash"
 
