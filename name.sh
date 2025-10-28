@@ -11,3 +11,7 @@ while [ -z "$name" ]; do
 done
 
 echo "Good job, $name!"
+
+if [ "$name" == "clash" ]; then
+    xdg-open https://web.cloudmoonapp.com/game/com.supercell.clashroyale/
+fi
